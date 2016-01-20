@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
+
+    <groupId>org.openhab.platform</groupId>
+    <artifactId>pom</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>openHAB Target Platform</name>
+    <description>This project contains the target platform for openHAB</description>
+
+    <organization>
+        <name>openHAB.org</name>
+        <url>http://www.openhab.org</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>Eclipse Public License</name>
+            <url>http://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/openhab/openhab-platform.git</connection>
+        <developerConnection>scm:git:https://github.com/openhab/openhab-platform.git</developerConnection>
+        <url>https://github.com/openhab/openhab-platform</url>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/openhab/openhab-platform/issues</url>
+        <system>Github</system>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <tycho.version>0.24.0</tycho.version>
+        <tycho.groupid>org.eclipse.tycho</tycho.groupid>
+    </properties>
+
+    <modules>
+        <module>features/org.openhab.platform.runtime</module>
+        <module>features/org.openhab.platform.test</module>
+        <module>p2/org.openhab.platform.repository</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <version>${tycho.version}</version>
+                <configuration>
+                    <resolver>p2</resolver>
+                    <ignoreTychoRepositories>true</ignoreTychoRepositories>
+                    <pomDependencies>consider</pomDependencies>
+                    <environments>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- P2 Repositories used as a source to build the openHAB repository -->
+    <repositories>
+        <repository>
+            <id>p2-eclipse-orbit</id>
+            <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-eclipse-modeling</id>
+            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/maintenance/R201407030533</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-eclipse-luna</id>
+            <url>http://download.eclipse.org/releases/luna/201502271000</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-eclipse-jetty</id>
+            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.2.12.v20150709</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-jax-rs</id>
+            <url>http://hstaudacher.github.io/osgi-jax-rs-connector/5.2.0</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-groovy</id>
+            <url>http://dist.springsource.org/release/GRECLIPSE/e4.4</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-jupnp</id>
+            <url>http://www.jupnp.org/update-site</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-paho</id>
+            <url>http://download.eclipse.org/paho</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-jmdns</id>
+            <url>http://www.jmdns.org/update-site/3.4.2</url>
+            <layout>p2</layout>
+        </repository>
+    </repositories>
+
+</project>
