@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.0.qualifier">
+      version="1.0.0">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -534,6 +534,13 @@
          download-size="0"
          install-size="0"
          version="1.1.0.v201211130549"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.paho.client.mqttv3"
+         download-size="0"
+         install-size="0"
+         version="1.0.2"
          unpack="false"/>
 
 </feature>

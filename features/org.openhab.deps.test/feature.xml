@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.test"
       label="org.openhab.deps.test"
-      version="1.0.0.qualifier">
+      version="1.0.0">
 
    <description>
       Feature bundling all openHAB test dependencies.
@@ -16,13 +16,15 @@
          id="org.junit"
          download-size="0"
          install-size="0"
-         version="4.11.0.v201303080030"/>
+         version="4.11.0.v201303080030"
+         unpack="false"/>
 
    <plugin
          id="org.codehaus.groovy"
          download-size="0"
          install-size="0"
-         version="2.3.7.xx-201411061335-e44-RELEASE"/>
+         version="2.3.7.xx-201411061335-e44-RELEASE"
+         unpack="false"/>
 
    <plugin
          id="org.mockito"
@@ -42,7 +44,8 @@
          id="org.apache.ant"
          download-size="0"
          install-size="0"
-         version="1.9.2.v201404171502"/>
+         version="1.9.2.v201404171502"
+         unpack="false"/>
 
    <plugin
          id="org.eclipse.core.jobs"
