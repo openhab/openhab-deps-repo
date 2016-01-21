@@ -1,17 +1,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <parent>
-    <groupId>org.openhab.deps</groupId>
-    <artifactId>pom</artifactId>
-    <version>1.0.0</version>
-    <relativePath>../../pom.xml</relativePath>
-  </parent>
+	<parent>
+		<groupId>org.openhab.deps</groupId>
+		<artifactId>pom</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<artifactId>openhab-deps-repo</artifactId>
 	<packaging>eclipse-repository</packaging>
 	<name>openHAB Dependencies P2 Repository</name>
 
+	<build>
+
+		<plugins>
+		  <plugin>
+	      <artifactId>maven-resources-plugin</artifactId>
+	     	<version>2.4.3</version>
+	      <executions>
+	        <execution>
+	          <id>default-resources</id>
+	          <phase>process-resources</phase>
+	          <goals>
+	            <goal>resources</goal>
+	          </goals>
+	          <configuration>
+	            <outputDirectory>${project.build.directory}</outputDirectory>
+						</configuration>
+	        </execution>
+	      </executions>
+	    </plugin>
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/filtered-resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
 </project>
