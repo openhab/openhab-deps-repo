@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.openhab.platform.repository</name>
+	<name>org.openhab.deps.repository</name>
 	<comment></comment>
 	<projects>
 	</projects>

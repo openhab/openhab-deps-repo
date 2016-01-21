@@ -2,16 +2,16 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.openhab.platform</groupId>
+    <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>org.openhab.platform.runtime</artifactId>
+  <artifactId>org.openhab.deps.test</artifactId>
 
-  <name>openHAB Target Platform Runtime Feature</name>
+  <name>openHAB Target Platform Test Feature</name>
   <packaging>eclipse-feature</packaging>
 
 </project>

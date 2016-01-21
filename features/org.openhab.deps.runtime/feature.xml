@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.openhab.platform.runtime"
-      label="org.openhab.platform.dependencies.runtime"
-      version="2.0.0.qualifier">
+      id="org.openhab.deps.runtime"
+      label="org.openhab.deps.runtime"
+      version="1.0.0.qualifier">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.

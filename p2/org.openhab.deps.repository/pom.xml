@@ -2,16 +2,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <parent>
-    <groupId>org.openhab.platform</groupId>
+    <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	
-	<artifactId>openhab-platform-p2</artifactId>
+	<artifactId>openhab-deps-repo</artifactId>
 	<packaging>eclipse-repository</packaging>
-	<name>openHAB Target Platform P2 Repository</name>
+	<name>openHAB Dependencies P2 Repository</name>
 
 </project>
