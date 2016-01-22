@@ -1,75 +1,55 @@
 #!/bin/bash
 #
 # Publish p2 repo to bintray
-# Usage: publish-bintray.sh user apikey owner 
+# Usage: publish-bintray.sh user owner apikey  
 #
-BINTRAY_USER=$1
-BINTRAY_API_KEY=$2
-BINTRAY_OWNER=$3
-PCK_VERSION=${project.version}
+BINTRAY_URL=https://api.bintray.com/
+BINTRAY_REPO=p2
+BINTRAY_PACKAGE=openhab-deps-repo
+PACKAGE_VERSION=${project.version}
+PACKAGE_ARCHIVE=${project.build.finalName}.zip
+PACKAGE_PATH=openhab-deps-repo/$PACKAGE_VERSION
+
+if [ "x$1" != "x" ]; then
+    BINTRAY_SUBJECT=$1
+fi
+if [ "x$2" != "x" ]; then
+    BINTRAY_USER=$2
+fi
+if [ "x$3" != "x" ]; then
+    BINTRAY_API_KEY=$3
+fi
+
+
 DIRNAME=`dirname "$0"`
-REPO_DIR=$DIRNAME/repository
-BASE_URL=https://api.bintray.com/content/${BINTRAY_OWNER}/p2/openhab-deps-repo
 
 function main() {
-  deploy_updatesite
-}
 
+  cd $DIRNAME
 
-function putFile() {
-  target_loc=${PCK_VERSION}/$2
-  echo "Uploading file $1 to $2"
-  response=$(curl -s -X PUT -T $1 -u ${BINTRAY_USER}:${BINTRAY_API_KEY} $BASE_URL/$target_loc;publish=0)
-  if [[ $response == *"success"* ]]
+  echo "Creating version $PACKAGE_VERSION ..."
+  response=$(curl -s -X POST -u ${BINTRAY_USER}:${BINTRAY_API_KEY} $BINTRAY_URL/packages/$BINTRAY_SUBJECT/$BINTRAY_REPO/$BINTRAY_PACKAGE/versions -d "{ \"name\": \"${PACKAGE_VERSION}\", \"desc\": \"Release ${PACKAGE_VERSION}\" }" -H "Content-Type: application/json")
+  if [[ $response == *"ordinal"* ]]
   then
-    echo "OK - $response"
+    echo "Version created: $response"
   elif [[ $response == *"already exists"* ]]
   then
-    echo "Exists - $response"
+    echo "Version exists: $response"
   else
-    echo "Retry - $response"
-    response=$(curl -s -X PUT -T $1 -u ${BINTRAY_USER}:${BINTRAY_API_KEY} $BASE_URL/$target_loc;publish=0)
-    echo "Failed - $response"
-    die 1;
+    echo "Failed to create version: $response"
+    exit 1;
+  fi
+
+  echo "Uploading archive $PACKAGE_ARCHIVE"
+  response=$(curl -v -X PUT --data-binary @$PACKAGE_ARCHIVE -u ${BINTRAY_USER}:${BINTRAY_API_KEY} "$BINTRAY_URL/content/$BINTRAY_SUBJECT/$BINTRAY_REPO/$PACKAGE_PATH/$PACKAGE_ARCHIVE;bt_package=$BINTRAY_PACKAGE;bt_version=$PACKAGE_VERSION;publish=1;explode=1;override=1" -H "Content-Type: application/zip")
+  if [[ $response == *"success"* ]]
+  then
+    echo "Archive uploaded: $response"
+  else
+    echo "Error uploading: $response"
+    exit 1;
   fi
 }
-
-
-function deploy_updatesite() {
-
-  cd $REPO_DIR
-
-  FILES=./*.jar
-  PLUGINDIR=./plugins/*
-  FEATUREDIR=./features/*
-
-  echo "Creating new version"
-  curl -s -X POST -u ${BINTRAY_USER}:${BINTRAY_API_KEY} $BASE_URL/versions -d "{ \"name\": \"${PCK_VERSION}\", \"desc\": \"Release ${PCK_VERSION}\"  }"
-
-  for f in $FILES;
-  do
-  if [ ! -d $f ]; then
-    putFile $f $f
-  fi
-  done
-
-  echo "Processing features dir $FEATUREDIR file..."
-  for f in $FEATUREDIR;
-  do
-    putFile $f ${f:2}
-  done
-
-  echo "Processing plugin dir $PLUGINDIR file..."
-
-  for f in $PLUGINDIR;
-  do
-    putFile $f ${f:2}
-  done
-
-  echo "Publishing the new version"
-  curl -X POST -u ${BINTRAY_USER}:${BINTRAY_API_KEY} $BASE_URL/${PCK_VERSION}/publish -d "{ \"discard\": \"false\" }"
-
-}
-
 
 main "$@"
+
