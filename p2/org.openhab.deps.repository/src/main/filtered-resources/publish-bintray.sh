@@ -41,7 +41,7 @@ function main() {
   fi
 
   echo "Uploading archive $PACKAGE_ARCHIVE"
-  response=$(curl -v -X PUT --data-binary @$PACKAGE_ARCHIVE -u ${BINTRAY_USER}:${BINTRAY_API_KEY} "$BINTRAY_URL/content/$BINTRAY_SUBJECT/$BINTRAY_REPO/$PACKAGE_PATH/$PACKAGE_ARCHIVE;bt_package=$BINTRAY_PACKAGE;bt_version=$PACKAGE_VERSION;publish=1;explode=1;override=1" -H "Content-Type: application/zip")
+  response=$(curl -s -X PUT --data-binary @$PACKAGE_ARCHIVE -u ${BINTRAY_USER}:${BINTRAY_API_KEY} "$BINTRAY_URL/content/$BINTRAY_SUBJECT/$BINTRAY_REPO/$PACKAGE_PATH/$PACKAGE_ARCHIVE;bt_package=$BINTRAY_PACKAGE;bt_version=$PACKAGE_VERSION;publish=1;explode=1;override=1" -H "Content-Type: application/zip")
   if [[ $response == *"success"* ]]
   then
     echo "Archive uploaded: $response"
