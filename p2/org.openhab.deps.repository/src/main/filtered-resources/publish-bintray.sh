@@ -45,6 +45,9 @@ function main() {
   if [[ $response == *"success"* ]]
   then
     echo "Archive uploaded: $response"
+  elif [[ $response == *"No files will be signed"* ]]
+  then
+    echo "Archive uploaded without signature: $response"
   else
     echo "Error uploading: $response"
     exit 1;
