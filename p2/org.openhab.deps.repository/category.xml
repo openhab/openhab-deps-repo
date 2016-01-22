@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.openhab.deps.runtime_1.0.0.qualifier.jar" id="org.openhab.deps.runtime" version="1.0.0.qualifier">
+   <feature id="org.openhab.deps.runtime" version="0.0.0">
       <category name="openhab.deps.runtime"/>
    </feature>
-   <feature url="features/org.openhab.platform.test_1.0.0.qualifier.jar" id="org.openhab.deps.test" version="1.0.0.qualifier">
+   <feature id="org.openhab.deps.test" version="0.0.0">
       <category name="openhab.deps.test"/>
    </feature>
    <category-def name="openhab.deps.runtime" label="openHAB Runtime Dependencies"/>
