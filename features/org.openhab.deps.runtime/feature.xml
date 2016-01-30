@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.1.qualifier">
+      version="1.0.1">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -279,7 +279,7 @@
          id="org.jupnp"
          download-size="0"
          install-size="0"
-         version="2.0.0.201511241047"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin

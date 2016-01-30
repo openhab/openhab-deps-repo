@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -127,7 +127,7 @@
         </repository>
         <repository>
             <id>p2-jupnp</id>
-            <url>http://www.jupnp.org/update-site</url>
+            <url>http://www.jupnp.org/update-site/2.1.0.RC1</url>
             <layout>p2</layout>
         </repository>
         <repository>
