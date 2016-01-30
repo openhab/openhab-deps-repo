@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.1">
+      version="1.0.2.qualifier">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.

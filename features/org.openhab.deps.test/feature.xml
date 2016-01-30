@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.test"
       label="org.openhab.deps.test"
-      version="1.0.1">
+      version="1.0.2.qualifier">
 
    <description>
       Feature bundling all openHAB test dependencies.
