@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.2.qualifier">
+      version="1.0.2">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -52,7 +52,7 @@
          id="com.google.gson"
          download-size="0"
          install-size="0"
-         version="2.3.1"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -223,7 +223,7 @@
          id="com.eclipsesource.jaxrs.swagger-all"
          download-size="0"
          install-size="0"
-         version="1.5.4"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -356,7 +356,7 @@
          id="com.eclipsesource.jaxrs.publisher"
          download-size="0"
          install-size="0"
-         version="5.2.0.201511120713"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -370,7 +370,7 @@
          id="com.eclipsesource.jaxrs.provider.swagger"
          download-size="0"
          install-size="0"
-         version="1.0.0.201511120713"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -399,7 +399,7 @@
          id="com.eclipsesource.jaxrs.provider.gson"
          download-size="0"
          install-size="0"
-         version="2.3.0.201511120713"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
