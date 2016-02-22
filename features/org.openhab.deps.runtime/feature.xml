@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.2">
+      version="1.0.3">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -216,7 +216,7 @@
          id="javax.jmdns"
          download-size="0"
          install-size="0"
-         version="3.4.2"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin

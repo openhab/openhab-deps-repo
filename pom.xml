@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -137,7 +137,7 @@
         </repository>
         <repository>
             <id>p2-jmdns</id>
-            <url>http://www.jmdns.org/update-site/3.4.2</url>
+            <url>http://www.jmdns.org/update-site/3.4.3</url>
             <layout>p2</layout>
         </repository>
     </repositories>
