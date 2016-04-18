@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.4">
+      version="1.0.5">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -38,7 +38,7 @@
          id="org.eclipse.xtext.xbase"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -109,7 +109,14 @@
          id="org.eclipse.xtext"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.smap"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -131,7 +138,7 @@
          id="org.eclipse.emf.ecore"
          download-size="0"
          install-size="0"
-         version="2.10.2.v20150123-0348"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -195,21 +202,21 @@
          id="org.eclipse.xtext.util"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.emf.common"
          download-size="0"
          install-size="0"
-         version="2.10.1.v20150123-0348"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.xtext.common.types"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -265,7 +272,14 @@
          id="org.eclipse.xtend.lib"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend.lib.macro"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -328,7 +342,7 @@
          id="org.eclipse.xtext.xbase.lib"
          download-size="0"
          install-size="0"
-         version="2.6.2.v201407030533"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -449,7 +463,7 @@
          id="org.eclipse.emf.ecore.xmi"
          download-size="0"
          install-size="0"
-         version="2.10.2.v20150123-0348"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin

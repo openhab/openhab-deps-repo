@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -101,8 +101,18 @@
             <layout>p2</layout>
         </repository>
         <repository>
-            <id>p2-eclipse-modeling</id>
-            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/maintenance/R201407030533</url>
+            <id>p2-eclipse-modeling-xtext</id>
+            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.9.2</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-eclipse-modeling-mwe</id>
+            <url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/2.8.3</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>p2-eclipse-modeling-emf</id>
+            <url>http://download.eclipse.org/modeling/emf/emf/updates/2.11/core/R201506010402</url>
             <layout>p2</layout>
         </repository>
         <repository>
