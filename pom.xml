@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -148,6 +148,11 @@
         <repository>
             <id>p2-jmdns</id>
             <url>http://www.jmdns.org/update-site/3.5.0</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>esh-3rdparty</id>
+            <url>https://eclipse.github.io/smarthome/third-party/target/repository</url>
             <layout>p2</layout>
         </repository>
     </repositories>
