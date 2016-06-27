@@ -484,7 +484,7 @@
          id="org.eclipse.equinox.common"
          download-size="0"
          install-size="0"
-         version="3.6.200.v20130402-1505"
+         version="3.7.0.v20150402-1709"
          unpack="false"/>
 
    <plugin
