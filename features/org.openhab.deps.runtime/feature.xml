@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.8">
+      version="1.0.9">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -403,6 +403,13 @@
 
    <plugin
          id="com.eclipsesource.jaxrs.provider.swagger"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.eclipsesource.jaxrs.provider.security"
          download-size="0"
          install-size="0"
          version="0.0.0"
