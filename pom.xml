@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.9</version>
+    <version>1.0.10</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -93,6 +93,14 @@
         </plugins>
     </build>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.openhab</groupId>
+            <artifactId>nrjavaserial</artifactId>
+            <version>3.12.0.OH</version>
+        </dependency>
+    </dependencies>
+
     <!-- P2 Repositories used as a source to build the openHAB deps repository -->
     <repositories>
         <repository>
@@ -154,6 +162,10 @@
             <id>esh-3rdparty</id>
             <url>https://eclipse.github.io/smarthome/third-party/target/repository</url>
             <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>bintray</id>
+            <url>http://dl.bintray.com/openhab/mvn</url>
         </repository>
     </repositories>
 

@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.9">
+      version="1.0.10">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -604,6 +604,20 @@
          download-size="0"
          install-size="0"
          version="2.1.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.mapdb.mapdb"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.neuronrobotics.nrjavaserial"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>
