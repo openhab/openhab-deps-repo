@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.10">
+      version="1.0.11">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -531,6 +531,13 @@
 
    <plugin
          id="org.eclipse.jetty.servlet"
+         download-size="0"
+         install-size="0"
+         version="9.2.12.v20150709"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jetty.proxy"
          download-size="0"
          install-size="0"
          version="9.2.12.v20150709"
