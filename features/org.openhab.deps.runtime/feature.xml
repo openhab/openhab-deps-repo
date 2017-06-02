@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.11">
+      version="1.0.12">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -596,21 +596,21 @@
          id="com.jayway.jsonpath.json-path"
          download-size="0"
          install-size="0"
-         version="2.0.0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="net.minidev.asm"
+         id="net.minidev.accessors-smart"
          download-size="0"
          install-size="0"
-         version="1.0.2"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="net.minidev.json-smart"
          download-size="0"
          install-size="0"
-         version="2.1.1"
+         version="2.2.0"
          unpack="false"/>
 
    <plugin
@@ -627,4 +627,24 @@
          version="0.0.0"
          unpack="false"/>
 
+   <plugin
+         id="californium-osgi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="scandium"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="element-connector"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 </feature>
