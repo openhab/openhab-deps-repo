@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.test"
       label="org.openhab.deps.test"
-      version="1.0.12">
+      version="1.0.13">
 
    <description>
       Feature bundling all openHAB test dependencies.
@@ -73,6 +73,14 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.pde.junit.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
          unpack="false"/>
 
    <plugin
