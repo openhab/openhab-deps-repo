@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.12">
+      version="1.0.13">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -94,7 +94,7 @@
          id="com.eclipsesource.jaxrs.jersey-min"
          download-size="0"
          install-size="0"
-         version="2.22.1"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -635,14 +635,21 @@
          unpack="false"/>
 
    <plugin
-         id="scandium"
+         id="org.eclipse.californium.scandium"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="element-connector"
+         id="org.eclipse.californium.element-connector"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.jsr-305"
          download-size="0"
          install-size="0"
          version="0.0.0"

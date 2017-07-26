@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -40,7 +40,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <tycho.version>0.24.0</tycho.version>
+        <tycho.version>1.0.0</tycho.version>
         <tycho.groupid>org.eclipse.tycho</tycho.groupid>
     </properties>
 
@@ -99,11 +99,6 @@
             <artifactId>nrjavaserial</artifactId>
             <version>3.12.0.OH</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.californium</groupId>
-            <artifactId>californium-osgi</artifactId>
-            <version>1.0.5</version>
-        </dependency>
     </dependencies>
 
     <!-- P2 Repositories used as a source to build the openHAB deps repository -->
@@ -134,13 +129,18 @@
             <layout>p2</layout>
         </repository>
         <repository>
+            <id>p2-eclipse-luna-updates</id>
+            <url>http://download.eclipse.org/eclipse/updates/4.4</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
             <id>p2-eclipse-jetty</id>
             <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.2.12.v20150709</url>
             <layout>p2</layout>
         </repository>
         <repository>
             <id>p2-jax-rs</id>
-            <url>http://hstaudacher.github.io/osgi-jax-rs-connector/5.3.0</url>
+            <url>http://hstaudacher.github.io/osgi-jax-rs-connector/5.3.1</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -160,7 +160,7 @@
         </repository>
         <repository>
             <id>p2-jmdns</id>
-            <url>http://www.jmdns.org/update-site/3.5.1</url>
+            <url>http://www.jmdns.org/update-site/</url>
             <layout>p2</layout>
         </repository>
         <repository>
