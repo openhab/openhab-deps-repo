@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.13">
+      version="1.0.14">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -649,7 +649,7 @@
          unpack="false"/>
 
    <plugin
-         id="org.jsr-305"
+         id="org.eclipse.jdt.annotation"
          download-size="0"
          install-size="0"
          version="0.0.0"
