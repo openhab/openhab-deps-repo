@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.14</version>
+    <version>1.0.15</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -27,13 +27,13 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/openhab/openhab-platform.git</connection>
-        <developerConnection>scm:git:https://github.com/openhab/openhab-platform.git</developerConnection>
-        <url>https://github.com/openhab/openhab-platform</url>
+        <connection>scm:git:https://github.com/openhab/openhab-deps-repo.git</connection>
+        <developerConnection>scm:git:https://github.com/openhab/openhab-deps-repo.git</developerConnection>
+        <url>https://github.com/openhab/openhab-deps-repo</url>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/openhab/openhab-platform/issues</url>
+        <url>https://github.com/openhab/openhab-deps-repo/issues</url>
         <system>Github</system>
     </issueManagement>
 
@@ -135,7 +135,7 @@
         </repository>
         <repository>
             <id>p2-eclipse-jetty</id>
-            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.2.12.v20150709</url>
+            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.14.v20161028</url>
             <layout>p2</layout>
         </repository>
         <repository>
