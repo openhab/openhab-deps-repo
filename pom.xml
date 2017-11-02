@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.16</version>
+    <version>1.0.18</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -124,13 +124,8 @@
             <layout>p2</layout>
         </repository>
         <repository>
-            <id>p2-eclipse-oxygen</id>
-            <url>http://download.eclipse.org/releases/oxygen/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
             <id>p2-eclipse-oxygen-updates</id>
-            <url>http://download.eclipse.org/eclipse/updates/4.7</url>
+            <url>http://download.eclipse.org/eclipse/updates/4.7/R-4.7-201706120950</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -150,7 +145,7 @@
         </repository>
         <repository>
             <id>p2-jupnp</id>
-            <url>http://www.jupnp.org/update-site/2.2.0</url>
+            <url>http://www.jupnp.org/update-site/2.3.0</url>
             <layout>p2</layout>
         </repository>
         <repository>
