@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.18</version>
+    <version>1.0.19</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -124,13 +124,18 @@
             <layout>p2</layout>
         </repository>
         <repository>
+            <id>p2-eclipse-oxygen-releases</id>
+            <url>http://download.eclipse.org/releases/oxygen/201709271000</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
             <id>p2-eclipse-oxygen-updates</id>
             <url>http://download.eclipse.org/eclipse/updates/4.7/R-4.7-201706120950</url>
             <layout>p2</layout>
         </repository>
         <repository>
             <id>p2-eclipse-jetty</id>
-            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.14.v20161028</url>
+            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.22.v20171030</url>
             <layout>p2</layout>
         </repository>
         <repository>

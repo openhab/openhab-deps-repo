@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.18">
+      version="1.0.19">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -31,11 +31,18 @@
          id="org.eclipse.jetty.server"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.xtext.xbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.cli"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -106,7 +113,35 @@
          unpack="false"/>
 
    <plugin
+         id="org.eclipse.lsp4j"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.lsp4j.jsonrpc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.eclipse.xtext"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ide"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.xbase.ide"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -120,10 +155,31 @@
          unpack="false"/>
 
    <plugin
+         id="org.eclipse.xtext.smap"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.eclipse.jetty.osgi.alpn.fragment"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          fragment="true"
          unpack="false"/>
 
@@ -145,7 +201,7 @@
          id="org.eclipse.jetty.webapp"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -159,7 +215,7 @@
          id="org.eclipse.jetty.osgi.httpservice"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -237,7 +293,7 @@
          id="org.eclipse.jetty.deploy"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -251,35 +307,35 @@
          id="org.eclipse.jetty.http"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.websocket.api"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.websocket.common"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.websocket.client"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.xml"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -287,6 +343,13 @@
          download-size="0"
          install-size="0"
          version="0.10.0.v201209301036"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -307,7 +370,7 @@
          id="org.eclipse.jetty.client"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -353,6 +416,13 @@
          unpack="false"/>
 
    <plugin
+         id="org.apache.felix.scr"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.slf4j.jul"
          download-size="0"
          install-size="0"
@@ -377,14 +447,14 @@
          id="org.eclipse.jetty.osgi.boot"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.util"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -396,6 +466,13 @@
 
    <plugin
          id="org.eclipse.osgi.services"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.osgi.util"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -463,7 +540,7 @@
          id="org.eclipse.jetty.rewrite"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
@@ -519,28 +596,28 @@
          id="org.eclipse.jetty.io"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.security"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.servlet"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.jetty.proxy"
          download-size="0"
          install-size="0"
-         version="9.3.14.v20161028"
+         version="9.3.22.v20171030"
          unpack="false"/>
 
    <plugin
