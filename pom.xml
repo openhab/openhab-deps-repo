@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.19</version>
+    <version>1.0.20</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -145,7 +145,7 @@
         </repository>
         <repository>
             <id>p2-groovy</id>
-            <url>http://dist.springsource.org/release/GRECLIPSE/e4.4</url>
+            <url>http://dist.springsource.org/release/GRECLIPSE/2.9.1/e4.4</url>
             <layout>p2</layout>
         </repository>
         <repository>
