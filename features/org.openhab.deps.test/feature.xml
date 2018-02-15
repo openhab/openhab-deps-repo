@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.test"
       label="org.openhab.deps.test"
-      version="1.0.21">
+      version="1.0.22">
 
    <description>
       Feature bundling all openHAB test dependencies.
@@ -76,6 +76,13 @@
          unpack="false"/>
 
    <plugin
+         id="org.eclipse.equinox.http.jetty"
+         download-size="0"
+         install-size="0"
+         version="3.3.0.v20160324-1850"
+         unpack="false"/>
+
+   <plugin
          id="org.hamcrest.core"
          download-size="0"
          install-size="0"
@@ -86,7 +93,7 @@
          id="org.hamcrest"
          download-size="0"
          install-size="0"
-         version="1.1.0.v20090501071000"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
