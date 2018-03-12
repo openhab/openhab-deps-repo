@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.22">
+      version="1.0.23">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -731,4 +731,26 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="javax.measure.unit-api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="tec.uom.lib.uom-lib-common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="tec.uom.se"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
 </feature>
