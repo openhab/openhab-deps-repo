@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.23</version>
+    <version>1.0.24</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -99,6 +99,31 @@
             <artifactId>nrjavaserial</artifactId>
             <version>3.12.0.OH</version>
         </dependency>
+        <dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.dongle.cc2531</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.dongle.ember</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.dongle.telegesis</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.dongle.xbee</artifactId>
+            <version>1.0.8</version>
+        </dependency>
     </dependencies>
 
     <!-- P2 Repositories used as a source to build the openHAB deps repository -->
@@ -171,6 +196,10 @@
         <repository>
             <id>bintray</id>
             <url>http://dl.bintray.com/openhab/mvn</url>
+        </repository>
+        <repository>
+            <id>bintray-zsmartsystems</id>
+            <url>http://dl.bintray.com/zsmartsystems/com.zsmartsystems</url>
         </repository>
     </repositories>
 
