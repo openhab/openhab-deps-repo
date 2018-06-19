@@ -124,6 +124,21 @@
             <artifactId>com.zsmartsystems.zigbee.dongle.xbee</artifactId>
             <version>1.0.11</version>
         </dependency>
+	<dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.console</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+	<dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.console.ember</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+	<dependency>
+            <groupId>com.zsmartsystems.zigbee</groupId>
+            <artifactId>com.zsmartsystems.zigbee.console.telegesis</artifactId>
+            <version>1.0.11</version>
+        </dependency>
     </dependencies>
 
     <!-- P2 Repositories used as a source to build the openHAB deps repository -->

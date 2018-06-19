@@ -789,6 +789,27 @@
          unpack="false"/>
 
    <plugin
+         id="com.zsmartsystems.zigbee.console"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.zsmartsystems.zigbee.console.ember"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.zsmartsystems.zigbee.console.telegesis"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+   
+   <plugin
          id="org.eclipse.soda.dk.comm"
          download-size="0"
          install-size="0"
