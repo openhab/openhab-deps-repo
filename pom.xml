@@ -124,17 +124,17 @@
             <artifactId>com.zsmartsystems.zigbee.dongle.xbee</artifactId>
             <version>1.0.14</version>
         </dependency>
-	<dependency>
+        <dependency>
             <groupId>com.zsmartsystems.zigbee</groupId>
             <artifactId>com.zsmartsystems.zigbee.console</artifactId>
             <version>1.0.14</version>
         </dependency>
-	<dependency>
+        <dependency>
             <groupId>com.zsmartsystems.zigbee</groupId>
             <artifactId>com.zsmartsystems.zigbee.console.ember</artifactId>
             <version>1.0.14</version>
         </dependency>
-	<dependency>
+        <dependency>
             <groupId>com.zsmartsystems.zigbee</groupId>
             <artifactId>com.zsmartsystems.zigbee.console.telegesis</artifactId>
             <version>1.0.14</version>
