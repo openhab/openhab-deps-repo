@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.31</version>
+    <version>1.0.32</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -149,33 +149,13 @@
             <layout>p2</layout>
         </repository>
         <repository>
-            <id>p2-eclipse-modeling-xtext</id>
-            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>p2-eclipse-modeling-mwe</id>
-            <url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/2.9.1/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>p2-eclipse-modeling-emf</id>
-            <url>http://download.eclipse.org/modeling/emf/emf/updates/2.11/core/R201506010402</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>p2-eclipse-oxygen-releases</id>
-            <url>http://download.eclipse.org/releases/oxygen/201709271000</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>p2-eclipse-oxygen-updates</id>
-            <url>http://download.eclipse.org/eclipse/updates/4.6/R-4.6-201606061100</url>
+            <id>p2-eclipse-photon-releases</id>
+            <url>http://download.eclipse.org/releases/photon</url>
             <layout>p2</layout>
         </repository>
         <repository>
             <id>p2-eclipse-jetty</id>
-            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.22.v20171030</url>
+            <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.4.11.v20180605</url>
             <layout>p2</layout>
         </repository>
         <repository>
