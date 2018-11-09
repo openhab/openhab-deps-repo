@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.34</version>
+    <version>1.0.35</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -95,7 +95,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.neuronrobotics</groupId>
+            <groupId>org.openhab</groupId>
             <artifactId>nrjavaserial</artifactId>
             <version>3.14.0</version>
         </dependency>
