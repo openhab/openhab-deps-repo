@@ -97,7 +97,7 @@
         <dependency>
             <groupId>org.openhab</groupId>
             <artifactId>nrjavaserial</artifactId>
-            <version>3.14.0</version>
+            <version>3.14.0.OH</version>
         </dependency>
         <dependency>
             <groupId>com.zsmartsystems.zigbee</groupId>
