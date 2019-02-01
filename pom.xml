@@ -8,7 +8,7 @@
 
     <groupId>org.openhab.deps</groupId>
     <artifactId>pom</artifactId>
-    <version>1.0.38</version>
+    <version>1.0.39</version>
     <packaging>pom</packaging>
 
     <name>openHAB Dependencies Repository</name>
@@ -144,6 +144,18 @@
             <artifactId>jna</artifactId>
             <version>4.5.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.xstream</artifactId>
+            <version>1.4.7_1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.2</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <!-- P2 Repositories used as a source to build the openHAB deps repository -->
@@ -159,6 +171,11 @@
             <layout>p2</layout>
         </repository>
         <repository>
+            <id>p2-eclipse-photon-updates</id>
+            <url>http://download.eclipse.org/eclipse/updates/4.7/R-4.7-201706120950</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
             <id>p2-eclipse-jetty</id>
             <url>http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.4.11.v20180605</url>
             <layout>p2</layout>
@@ -166,11 +183,6 @@
         <repository>
             <id>p2-jax-rs</id>
             <url>http://hstaudacher.github.io/osgi-jax-rs-connector/5.3.1</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>p2-groovy</id>
-            <url>http://dist.springsource.org/release/GRECLIPSE/2.9.1/e4.4</url>
             <layout>p2</layout>
         </repository>
         <repository>
