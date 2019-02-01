@@ -244,7 +244,7 @@
          id="org.eclipse.osgi"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="3.12.0.v20170512-1932"
          unpack="false"/>
 
    <plugin
@@ -419,7 +419,7 @@
          id="org.eclipse.equinox.ds"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.5.0.v20170307-1429"
          unpack="false"/>
 
    <plugin
@@ -596,7 +596,7 @@
          id="org.eclipse.equinox.common"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="3.9.0.v20170207-1454"
          unpack="false"/>
 
    <plugin
@@ -631,14 +631,14 @@
          id="org.eclipse.equinox.registry"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="3.7.0.v20170222-1344"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.cm"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.2.0.v20170105-1446"
          unpack="false"/>
 
    <plugin
@@ -825,6 +825,54 @@
 
    <plugin
          id="com.sun.jna"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="joda-time"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.paho.client.mqttv3"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+   <plugin
+         id="org.apache.servicemix.bundles.xstream"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+<plugin
+         id="org.codehaus.jackson.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+<plugin
+         id="org.codehaus.jackson.jaxrs"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+<plugin
+         id="org.codehaus.jackson.xc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+<plugin
+         id="org.codehaus.jackson.mapper"
          download-size="0"
          install-size="0"
          version="0.0.0"
