@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.runtime"
       label="org.openhab.deps.runtime"
-      version="1.0.41">
+      version="1.0.42">
 
    <description>
       Feature bundling all openHAB runtime dependencies, except openHAB and SmartHome bundles.
@@ -24,7 +24,7 @@
          id="com.google.guava"
          download-size="0"
          install-size="0"
-         version="15.0.0.v201403281430"
+         version="21.0.0.v20170206-1425"
          unpack="false"/>
 
    <plugin
@@ -244,7 +244,7 @@
          id="org.eclipse.osgi"
          download-size="0"
          install-size="0"
-         version="3.13.300.v20190125-2016"
+         version="3.13.300.v20190218-1622"
          unpack="false"/>
 
    <plugin
@@ -596,7 +596,7 @@
          id="org.eclipse.equinox.common"
          download-size="0"
          install-size="0"
-         version="3.10.300.v20190122-1234"
+         version="3.10.300.v20190218-2100"
          unpack="false"/>
 
    <plugin
