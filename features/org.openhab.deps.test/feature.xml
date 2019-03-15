@@ -2,7 +2,7 @@
 <feature
       id="org.openhab.deps.test"
       label="org.openhab.deps.test"
-      version="1.0.41">
+      version="1.0.42">
 
    <description>
       Feature bundling all openHAB test dependencies.
@@ -30,7 +30,7 @@
          id="org.eclipse.core.runtime"
          download-size="0"
          install-size="0"
-         version="3.15.100.v20181107-1343"
+         version="3.15.200.v20190301-1641"
          unpack="false"/>
 
    <plugin
@@ -44,14 +44,14 @@
          id="org.eclipse.core.jobs"
          download-size="0"
          install-size="0"
-         version="3.10.200.v20180912-1356"
+         version="3.10.300.v20190215-2048"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.preferences"
          download-size="0"
          install-size="0"
-         version="3.7.200.v20180827-1235"
+         version="3.7.300.v20190218-2100"
          unpack="false"/>
 
    <plugin
@@ -65,7 +65,14 @@
          id="org.eclipse.equinox.app"
          download-size="0"
          install-size="0"
-         version="1.4.0.v20181009-1752"
+         version="1.4.100.v20190215-2139"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.registry"
+         download-size="0"
+         install-size="0"
+         version="3.8.300.v20190218-2100"
          unpack="false"/>
 
    <plugin
@@ -114,7 +121,7 @@
          id="org.eclipse.equinox.launcher"
          download-size="0"
          install-size="0"
-         version="1.5.200.v20180922-1751"
+         version="1.5.300.v20190213-1655"
          unpack="false"/>
 
    <plugin
